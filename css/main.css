@@ -1,0 +1,260 @@
+/*@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');*/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+.navbar{
+	position: relative;
+	z-index: 1;
+}
+.navbar-brand{
+	font-family: viga;
+	font-size: 32px;
+}
+
+.tombol{
+	text-transform: uppercase;
+	border-radius: 40px;
+	background-color: #3EC28F;
+}
+
+.jumbotron{
+	background-image: url(../img/agreement-business-clapping-990817.jpg);
+	background-size: cover;
+	height: 540px;
+	text-align: center;
+	background-position: 35% 70%;
+	position: relative;
+}
+.bg-dark{
+	background-image: url(../img/agreement-business-clapping-990817.jpg);
+	background-size: cover;
+}
+
+.jumbotron .container{
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top,rgba(0,0,0,1), rgba(0,0,0,0) );
+	position: absolute;
+	bottom: 0;
+}
+
+.jumbotron .display-4{	
+	margin-top: 150px;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	font-size: 40px;
+	margin-bottom: 30px;
+
+}
+
+.jumbotron .display-4 span{
+	font-weight: 500;
+}
+
+.info-panel{
+	box-shadow: 0 3px 20px rgba(0,0,0,0.3);
+	border-radius: 12px;
+	margin-top: -100px;
+	background-color: #fff;
+	padding: 30px;
+}
+
+.info-panel img{
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.info-panel h4{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.info-panel p{
+	font-size: 14px;
+	color: #ACACAC;
+	margin-top :-5px;
+	font-weight: 200;
+}
+
+.workingspace{
+	margin-top: 120px;
+	text-align: center;
+}
+
+footer{
+	font-weight: 200;
+	color: #ACACAC;
+	font-size: 18px;
+	margin-bottom: 30px;
+	margin-top: 100px;
+}
+
+#features{
+	background-color: #F6F7F8;
+	margin: 25px 0;
+	color: #59687C;
+
+}
+
+#features .item{
+	/*box-shadow: 0 1px 5px;*/
+	padding :30px;
+	margin:30px 20px;
+}
+#features img{
+	width: 120px;
+	height: 120px;
+	padding-right: 10px; 
+}
+#features h1{
+	color: #414C5A;
+}
+
+.wrapper{
+  width:70%;
+}
+.panel-heading {
+  padding: 0;
+	border:0;
+}
+.panel-title>a, .panel-title>a:active{
+	display:block;
+	padding:15px;
+  color:#555;
+  font-size:16px;
+  font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+  word-spacing:3px;
+	text-decoration:none;
+}
+.panel-heading  a:before {
+	font-family: 'FontAwesome';
+   content: '\f078'; /* fa-chevron-down */
+   float: right;
+   transition: all 0.5s;
+}
+.panel-heading.active a:before {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	transform: rotate(180deg);
+} 
+#service{
+	color: #59687C;
+	margin: 25px 0;
+}
+
+.nav-pills a{
+color:#59687C !important;
+text-shadow: none;
+}
+
+#service h1{
+	color: #289CD8;
+}
+
+#testimoni{
+	margin-top: 120px;
+}
+
+#testimoni h1{
+	color: #289CD8;
+}
+#testimoni .container-fluid{
+	padding: 100px;
+}
+.carousel-inner .carousel-item .img-box{
+	width: 135px;
+	height: 135px;
+}
+.carousel-control-next{
+	color: #000;
+}
+.carousel-control-prev{
+	color: #000;
+}
+.carousel-indicator{
+
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+/* Dekstop */
+@media (min-width: 992px) { 
+	.navbar-brand, .nav-link{
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	}
+
+	.nav-link{
+	text-transform: uppercase;
+	margin-right: 30px;
+	}
+
+	.nav-link:hover::after{
+		content: '';
+		display: block;
+		border: 2px solid #289CD8;
+		width: 50%;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: -15px;
+	}
+
+	.jumbotron{
+		margin-top: -75px;
+		height: 640px;
+	}
+
+	.jumbotron .display-4{
+		font-size: 62px;
+	}
+
+	.workingspace{
+		margin-top: 120px;
+		text-align:left ;
+	}
+
+	.testimonial h5{
+		font-size: 32px;
+	}
+
+	.wrapper{
+		width:100%;
+	} 
+ }
